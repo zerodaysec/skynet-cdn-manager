@@ -34,10 +34,13 @@ def generate_cloudfront_url(bucket, key):
 
 def get_all_buckets():
     """Retrieve a list of all available buckets."""
+    # the app should pull all buckets available to ourselves
     buckets = [bucket["Name"] for bucket in s3.list_buckets()["Buckets"]]
-    # for bkt in buckets:
-    #     print(bkt)
-    return BUCKET_LIST
+    filtered_buckets= []
+    for bucket in buckets:
+        if 'www' in bucket or 'cdn' in bucket:
+            filtered_buckets.append(bucket)
+    return filtered_buckets
 
 
 def view_bucket_content():
