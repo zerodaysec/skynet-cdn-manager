@@ -1,5 +1,7 @@
 # Skynet CDN Manager
 
+![Skynet CDN Manager](https://cdn.n3rd-media.com/gfx/general/cdn.png)
+
 This is a very simple (and I mean SIMPLE) streamlit app for managing files on s3 which I use as a CDN. This app allows
 me to simply upload and download artifacts I store on my CDN. Mainly images but also some mp4s here and there.
 
