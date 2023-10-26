@@ -1,5 +1,7 @@
 # Skynet CDN Manager
 
+![CICD Action](https://github.com/zerodaysec/skynet-cdn-manager/actions/workflows/cicd.yml/badge.svg)
+
 ![Skynet CDN Manager](https://cdn.n3rd-media.com/gfx/general/cdn.png)
 
 This is a very simple (and I mean SIMPLE) streamlit app for managing files on s3 which I use as a CDN. This app allows
